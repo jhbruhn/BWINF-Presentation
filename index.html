@@ -52,16 +52,145 @@
 					</ol>
 				</section>
 				<section>
-						<h2>Madde</h2>
-						Sehr sehr geile Gleichungen:
-						
-						<br /><br />
-						\[\begin{aligned}
-						\dot{x} &amp; = \sigma(y-x) \\
-						\dot{y} &amp; = \rho x - y - xz \\
-						\dot{z} &amp; = -\beta z + xy
-						\end{aligned} \]
-						
+						<section>
+							<h2>Junioraufgabe 1</h2>
+						</section>
+						<section>
+							<h2>Was ist die Aufgabe?</h2>
+							<p class="fragment">"Song" mit zufälligen Silben, zufälliger Anzahl von Strophen und Versen darin etc. generieren.</p>
+						</section>
+						<section>
+							<h2>Beispiel:</h2>
+							<p class="fragment roll-in">ko kop di ko<br />
+								ce cep di ce<br />
+								ce cep di ce<br />
+								yeah!</p>
+						</section>
+						<section>
+							<h2>Wie?</h2>
+							Ganz einfach...<span class="fragment" data-fragment-index="1">vielleicht.</span><br />
+							<ol>
+								<li class="fragment">Anzahl von Strophen zufällig auswählen (z.B. zwischen 2 und 6) -&gt;<code>int strophenZahl</code></li>
+								<li class="fragment">Anzahl von Versen zufällig auswählen (z.B. zwischen 2 und 6) -&gt;<code>int versZahl</code></li>
+								<li class="fragment">boolean, ob die Länge von Strophen variieren soll -&gt;<code>boolean abwechselndeLaenge</code></li>
+								<li class="fragment">Strophen generieren</li>
+							</ol>
+						</section>
+						<section>
+							<h2>Strophe generieren</h2>
+							<ol>
+								<li class="fragment">Eine <code>silbenAnzahl</code> von Silben pro Vers zufällig auswählen (z.B. zwischen 2 und 5)</li>
+								<li class="fragment">2 zufällige Konsonanten und 3 Vokale zur Nutzung in den Silben auswählen (zufällig)</li>
+								<li class="fragment"><code>versZahl</code> <strong>Verse generieren</strong> mit <code>silbenAnzahl</code> Silben und gewählten Buchstaben</li>
+								<li class="fragment">Am Ende mit 50% Wahrscheinlichkeit einen lustigen "Shout" hinzufügen (z.B. <em>yo man!</em> oder <em>erdbeermarmelade!</em>)
+							</ol>
+						</section>
+						<section>
+							<h2>Vers generieren</h2>
+							<ol>
+								<li class="fragment">Eine zufällige Silbe aus der Auswahl von Konsonanten und Vokalen generieren (z.B. <em>ci</em>)</li>
+								<li class="fragment"><code>silbenAnzahl</code> mal die Silbe aneinanderrehein</li>
+								<li class="fragment"><em>p di</em> an den String anfügen</li>
+								<li class="fragment"><code>silbenAnzahl - 1</code> mal die Silbe anhängen, nur um einen vermindert damit die Gesamtanzahl ungerade is</li>
+							</ol>
+						</section>
+				</section>
+				<section>
+				        <section>
+				            <h1>Junioraufgabe 2</h1>
+				            <div>
+				                <ul>
+				                    <li>
+				                        <span style="text-align: center;">Gegeben ist ein&nbsp;</span>
+				                        <span style="text-align: center;">&nbsp;</span>
+				                        <span style="text-align: center;">Zollstock.&nbsp;</span>
+				                        <br>
+				                    </li>
+				                    <li>
+				                        <span style="text-align: center;">Er besteht aus 10 Segmenten und einem Loch zum aufhängen.</span>
+				                        <br>
+				                    </li>
+				                    <li>
+				                        <span style="text-align: center;">Ein Stoffbeutel kann 2 Segmente in Verlängerung aufnehmen.</span>
+				                        <br>
+				                    </li>
+				                    <li>
+				                        <span style="text-align: center;">Der Zollstock wird 62-mal zufällig in den Beutel getan.</span>
+				                        <br>
+				                    </li>
+				                    <li>
+				                        <span style="text-align: center;">Ist eine Stellung des Zollstocks doppelt vorhanden?</span>
+				                    </li>
+				                </ul>
+				            </div>
+				            <div>
+				                <img src="http://puu.sh/7xxgD.jpg" style="width: 192px; height: 154.45810055865923px; max-height: none; max-width: none;">
+				                <span>
+				                    <br>
+				                </span>
+				            </div>
+				        </section>
+				        <section>
+				            <h2>Herangehensweise</h2>
+				            <div>
+				                <ul>
+				                    <li>
+				                        <span style="text-align: center;">&nbsp;<font style="font-size: 32px;">Da der Beutel zwei Elemente in der Länge zulässt lassen sich mögliche Lösungen in das&nbsp;</font>
+				                    </span>
+				                    <span style="text-align: center;">
+				                        <font style="font-size: 32px;">Verhältnis der Segmente auf der einen zu den Segmenten auf der anderen Seite aufteilen.&nbsp;</font>
+				                    </span>
+				                    <br>
+				                </li>
+				                <li>
+				                    <span style="text-align: center;">&nbsp;Die verschiedenen Lösungen müssen gespiegelt werden und gleiche aussortiert werden.</span>
+				                    <br>
+				                </li>
+				                <li>
+				                    <span style="text-align: center; font-size: 32px;">Hat man alle möglichen Lösungen und gibt es weniger oder genau 61 (62 - 1) so hat&nbsp;</span>
+				                    <span style="text-align: center; font-size: 32px;">Ralucas Verlobter recht. Sonst hat er nur evtl. Recht.&nbsp;</span>
+				                    <br>
+				                </li>
+				            </ul>
+				        </div>
+				    </section>
+				    <section>
+				        <h2>
+				            <img src="http://puu.sh/7xxst.jpg">
+				            <br>
+				        </h2>
+				    </section>
+				    <section>
+				        <h2>
+				            <img src="http://puu.sh/7xxuY.jpg">
+				            <br>
+				        </h2>
+				    </section>
+				    <section>
+				        <h2>Deutung</h2>
+				        <div>
+				            <div>
+				                <ul>
+				                    <li style="text-align: left;">
+				                        <span style="font-size: 42px; text-align: center;">Der Zollstock hat ein Aufhängeloch: Jede Lösung hat eine Alternative.</span>
+				                        <br>
+				                    </li>
+				                    <li style="text-align: left;">
+				                        <span style="font-size: 42px; text-align: center;">Daher: 66 Lösungen *2 = 132</span>
+				                        <br>
+				                    </li>
+				                    <li style="text-align: left;">
+				                        <span style="font-size: 42px; text-align: center;">Ralucas Verlobter kann Recht haben, muss er aber nicht:&nbsp;</span>
+				                        <br>
+				                    </li>
+				                    <li style="text-align: left;">
+				                        <span style="font-size: 42px; text-align: center;">Zufällig sind 2 gleiche Kombinationen möglich.</span>
+				                        <br>
+				                    </li>
+				                </ul>
+				            </div>
+				        </div>
+				    </section>
 				</section>
 			</div>
 
