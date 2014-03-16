@@ -53,7 +53,7 @@
 				</section>
 				<section>
 						<section>
-							<h2>Junioraufgabe 1</h2>
+							<h1>Junioraufgabe 1</h1>
 						</section>
 						<section>
 							<h2>Was ist die Aufgabe?</h2>
@@ -93,6 +93,20 @@
 								<li class="fragment"><em>p di</em> an den String anfügen</li>
 								<li class="fragment"><code>silbenAnzahl - 1</code> mal die Silbe anhängen, nur um einen vermindert damit die Gesamtanzahl ungerade is</li>
 							</ol>
+						</section>
+						<section>
+							<h2>Fertig</h2>
+							<p>
+								ko kop di ko<br />
+								ce cep di ce<br />
+								ce cep di ce<br />
+								erdbeermarmelade!<br />
+								<br />
+								ji ji jip di ji ji<br />
+								ja ja jap di ja ja<br />
+								ci ci cip di ci ci<br />
+								<em class="fragment">composed by Dieter Bohlen</em>
+							</p>	
 						</section>
 				</section>
 				<section>
@@ -192,6 +206,203 @@
 				        </div>
 				    </section>
 				</section>
+				    <section>
+				        <section>
+				            <h1>Aufgabe 3:Vortänzer</h1>
+				<div class="fragment" data-fragment-index="0">Ein Roboter tanzt vor, ein zweiter soll den "Tanz" imitieren</div>
+				<div class="fragment" data-fragment-index="1">Für das Imitat gibt es Strafpunkte:</div>
+				<div class="fragment" data-fragment-index="2">
+				    <font style="font-size: 24px;">I. Für jedes Zeichen des Programmes 3 Punkte</font>
+				</div>
+				<div class="fragment" data-fragment-index="3">
+				    <font style="font-size: 24px;">II. Für jede Längeneinheit Abstand pro Sekunde einen Punkt</font>
+				</div>
+				<div>
+				        <br>
+				</div>
+				<div class="fragment" data-fragment-index="4">
+				    Aufgabe:
+				</div>
+				<div class="fragment" data-fragment-index="5">
+				    Imitate mit passenden Strafpunkten finden
+				</div>
+				<div class="fragment" data-fragment-index="6">
+				    Programm zur Berechnung der Strafpunkte schreiben
+				</div>
+				<div>
+				    <br>
+				</div>
+				<div>
+				    <br>
+				</div>
+				</section>
+				            <section>
+				                <h2>
+				                    Programmiersprache der Roboter
+				                    <br>
+				                </h2>
+				                <div class="fragment" data-fragment-index="0">
+				                    <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">"F" - Vorwärts</div>
+				                    <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">"B" - Rückwärts</div>
+				                    <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">"l" - 45° links drehen</div>
+				                    <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">"r" - 45° rechts drehen</div>
+				                    <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">"-" - nichts machen</div>
+				                    <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">"n<i>Befehlsfolge</i>." Führt Befehlsfolge n mal aus</div>
+				                </div>
+				                <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;">
+				                    <br>
+				                </div>
+				                <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;" class="fragment" data-fragment-index="1">FFrFrrB--3B.</div>
+				                <div style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal;" class="fragment" data-fragment-index="2">4F. = FFFF</div>
+				            </section>
+				            <section>
+				                <h2>OriginalProgramme</h2>
+				<div>
+				    <table>
+				        <tbody>
+				<tr>
+				            <td>Tanzprogramm</td>
+				            <td>Strafpunktgrenze</td>
+				        </tr>
+				        <tr>
+				            <td>4FFFFrr.</td>
+				            <td>21</td>
+				        </tr>
+				        <tr>
+				            <td>FrrFllFrrFrrrFF</td>
+				            <td>20</td>
+				        </tr>
+				        <tr>
+				            <td>lFrrFFllFFFrrFllFrrFF </td>
+				            <td>50</td>
+				        </tr>
+				    </tbody>
+				</table>
+				<br>
+				</div>
+				<div>
+				    <br>
+				</div>
+
+
+
+
+
+
+
+
+				</section>
+				                <section>
+				                    <h2>Programm 1</h2>
+				                    <div>
+				                        <br>
+				                    </div>
+				                    <div class="fragment" data-fragment-index="0">
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">4FFFFrr.</span>
+				                        <br>
+				                    </div>
+				                    <div>
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">
+				                            <br>
+				                        </span>
+				                    </div>
+				                    <div class="fragment" data-fragment-index="1">
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">FFFF zu 4F. machen</span>
+				                    </div>
+				                    <div>
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">
+				                            <br>
+				                        </span>
+				                    </div>
+				                    <div class="fragment" data-fragment-index="2">
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">44F.rr.&nbsp;</span>
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">
+				                            <br>
+				                        </span>
+				                    </div>
+				                    <div>
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">
+				                            <br>
+				                        </span>
+				                    </div>
+				                    <div class="fragment" data-fragment-index="3">
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">7 Zeichen * 3 Strafpunkte/Zeichen</span>
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">
+				                            <br>
+				                        </span>
+				                    </div>
+				                    <div class="fragment" data-fragment-index="4">
+				                        <span style="font-size: 35.434993743896484px; font-style: normal; font-variant: normal; text-align: left;">= 21 Strafpunkte</span>
+				                    </div>
+				                </section>
+				                <section>
+				                    <h2>Programm 2</h2>
+				<div class="fragment" data-fragment-index="0">
+				    <div>FrrFllFrrFrrrFF&nbsp;</div>
+				</div>
+				<div>
+				    <br>
+				</div>
+				<div class="fragment" data-fragment-index="1">Beim Testen des Berechnungsalgorithmus kam heraus:</div>
+				<div>
+				    <br>
+				</div>
+				<div class="fragment" data-fragment-index="2">
+				    <font style="font-size: 72px;">F</font>
+				</div>
+				                    <div>
+				                        <font style="font-size: 72px;">
+				                            <br>
+				                        </font>
+				                    </div>
+				<div class="fragment" data-fragment-index="3">
+				    ist die Lösung des Problems
+				</div>
+				                    <div class="fragment" data-fragment-index="4">Strafpunkte: 19P</div>
+				</section>
+				                    <section>
+				                        <h2>Programm 3</h2>
+				                        <div class="fragment" data-fragment-index="0">
+				                            <div>lFrrFFllFFFrrFllFrrFF&nbsp;</div>
+				                        </div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="1">Da der Roboter eigentlich bloß im Zick-Zack gerade ausfährt:</div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="2">
+				                            <div>6F-.&nbsp;</div>
+				                        </div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="3">führt zu insgesamt</div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="4">44 Strafpunkten</div>
+				                    </section>
+				                    <section>
+				                        <h2>BerechnungsProgramm</h2>
+				<div class="fragment current-fragment" data-fragment-index="0">I. Schleifen aus dem Code entfernen</div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="1">II. Sowohl Original und Imitat parallel simulieren</div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="2">III. Nach jedem Schritt Strafpunkte berechnen</div>
+				                        <div>
+				                            <br>
+				                        </div>
+				                        <div class="fragment" data-fragment-index="3">IV. Strafpunkte durch Programmlänge dazurechnen</div>
+
+				<br>
+				</section>
+				                    </section>
 			</div>
 
 		</div>
