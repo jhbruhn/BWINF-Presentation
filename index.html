@@ -51,6 +51,18 @@
 							<li class="fragment">Oder auch nicht...</li>
 					</ol>
 				</section>
+				<section>
+						<h2>Madde</h2>
+						Sehr sehr geile Gleichungen:
+						
+						<br /><br />
+						\[\begin{aligned}
+						\dot{x} &amp; = \sigma(y-x) \\
+						\dot{y} &amp; = \rho x - y - xz \\
+						\dot{z} &amp; = -\beta z + xy
+						\end{aligned} \]
+						
+				</section>
 			</div>
 
 		</div>
@@ -68,7 +80,7 @@
 				history: true,
 				center: true,
 
-				theme: 'simple', // available themes are in /css/theme
+				theme: 'solarized', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 			    multiplex: {
 			           // Example values. To generate your own, see the socket.io server instructions.
@@ -77,9 +89,12 @@
 			    	   url: "bwinf.herokuapp.com:80" // Location of your socket.io server
 			    },
 				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
+				//parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				//parallaxBackgroundSize: '2100px 900px',
+				math: {
+					mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+				},
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -88,6 +103,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/math/math.js', async: true },
 					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
 					{ src: 'plugin/multiplex/client.js', async: true },
 					{ src: 'plugin/multiplex/master.js', async: true }
