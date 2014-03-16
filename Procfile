@@ -1,1 +1,1 @@
-web: node plugins/multiplexer
+web: node plugin/multiplex
