@@ -198,6 +198,143 @@
         </section>
         <section>
           <section>
+            <h1>Aufgabe 1</h1>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <font style="font-size: 42px;">
+                  <span style="text-align: center;">Gegeben ist eine gerundete rationale Zahl n.</span>
+                  </font>
+                </li>
+                <li>
+                  <span style="text-align: center;">
+                  <font style="font-size: 42px;">Gesucht ist ein Bruch mit möglichst kleinem Zähler und Nenner, dessen Wert möglichst nah an n liegt.</font>
+                  </span>
+                  <br>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Beispiel</h2>
+            <div>n = 1,857143&nbsp;<br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>1.Versuch</div>
+            <div>
+              <b>
+              <i>
+              <u>1857143/1000000</u>
+              </i>
+              </b>
+              <br>
+            </div>
+            <div>=&gt; Zu großer Zähler und Nenner</div>
+            <div>
+              <br>
+            </div>
+            <div>2. Versuch</div>
+            <div>
+              <b>
+              <i>
+              <u>13/7</u>
+              </i>
+              </b>
+            </div>
+            <div>= 1,8571428571428571428571428571429<br>
+            </div>
+            <div>=&gt; Möglichst kleiner Zähler und Nenner und nah n</div>
+          </section>
+          <section>
+            <h2>Herangehensweise</h2>
+            <div>Gesucht ist ein Näherungsverfahren.</div>
+            <div>Durch Recherche wurde folgendes Prinzip erarbeitet:</div>
+            <div>1. Zunächst wird der Bruch</div>
+            <div>
+              <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/juliusmoller/images/294948/aufg24.gif" style="width: 57px; height: 37.56818181818182px; max-height: none; max-width: none;">
+              <br>
+            </div>
+            <div>&nbsp;erstellt. Dabei wird x so gewählt,&nbsp;</div>
+            <div>
+              <img src="http://puu.sh/7xC9i.png">
+              <br>
+            </div>
+            <div>
+              <span>2. Aus dem daraus entstehenden Bruch wird nun ein Kettenbruch generiert (euklidischer Algorithmus).</span>
+            </div>
+            <div>
+              <span>3. Aus dem Kettenbruch lassen sich Näherungsbrüche generieren.</span>
+            </div>
+            <div>
+              <span>4. Welcher Näherungsbruch wird gewählt?</span>
+            </div>
+          </section>
+          <section>
+            <h2>Beispiel</h2>
+            <div>&nbsp;n =&nbsp;1.414214&nbsp;</div>
+            <div>1. Bruch natürlicher Zahlen:</div>
+            <div>&nbsp;1414214&nbsp;/1000000</div>
+            <div>2. Kettenbruch:</div>
+            <div>
+              <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/juliusmoller/images/294917/aufg2.gif" style="width: 459px; height: 294.3464373464373px; max-height: none; max-width: none;">
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+          </section>
+          <section>
+            <h2>Beispiel</h2>
+            <div>1. Annäherung:</div>
+            <div>
+              <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/juliusmoller/images/294921/aufg21.gif">&nbsp;
+            </div>
+            <div>= &nbsp;3/2 = 1,5<br>
+            </div>
+            <div>2. Annäherung</div>
+            <div>
+              <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/juliusmoller/images/294923/aufg22.gif">
+              <br>
+            </div>
+            <div>= 7/5 = 1,4</div>
+            <div>...</div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <span style="font-family: monospace; text-align: left; white-space: pre-wrap; background-color: white; color: rgb(68, 68, 68);">
+              <br>
+              </span>
+            </div>
+          </section>
+          <section>
+            <h2>Beispiel</h2>
+            <div>
+              <div style="font-size: 36px; font-style: normal; font-variant: normal;">9. Annäherung</div>
+              <div style="font-size: 36px; font-style: normal; font-variant: normal;">= 1970 / 1393 =&nbsp;<span style="font-family: monospace; text-align: left; white-space: pre-wrap; background-color: white; color: rgb(68, 68, 68);">1.4142139267767408470...</span>
+              </div>
+            </div>
+            <div style="font-size: 36px; font-style: normal; font-variant: normal;">=&gt; Die 9. Annäherung ist die erste Annäherung, bei der alle Nachkommastellen gerundet mit denen von n übereinstimmen.</div>
+            <div style="font-size: 36px; font-style: normal; font-variant: normal;">Somit ist die 9. Annäherung die erste akzeptable.</div>
+            <div style="font-size: 36px; font-style: normal; font-variant: normal;">Die erste akzeptable Annäherung sollte gewählt &nbsp;werden, da so Zähler und Nenner bei ausreichender Präzision möglichst klein bleiben.</div>
+          </section>
+        </section>
+        <section>
+          <section>
             <h1>Aufgabe 3:Vortänzer</h1>
             <div class="fragment" data-fragment-index="0">Ein Roboter tanzt vor, ein zweiter soll den "Tanz" imitieren</div>
             <div class="fragment" data-fragment-index="1">Für das Imitat gibt es Strafpunkte:</div>
@@ -428,7 +565,7 @@
                  // Example values. To generate your own, see the socket.io server instructions.
                  secret: "13949546852973953814", // null so the clients do not have control of the master presentation
                  id: '8c2672408e6d558a', // id, obtained from socket.io server
-          	   url: "bwinf.herokuapp.com:80" // Location of your socket.io server
+          	   //url: "bwinf.herokuapp.com:80" // Location of your socket.io server
           },
       	// Parallax scrolling
       	//parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
